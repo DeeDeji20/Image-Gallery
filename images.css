@@ -1,0 +1,248 @@
+img {
+    width: 760px;
+    height: 500px;
+}
+
+body {
+    z-index: -1;
+    margin: auto;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+#slider {
+    width: 760px;
+    height: 500px;
+    margin: 80px auto;
+    border: 10px solid white;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    position: relative;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    background-color: rgb(179, 170, 173);
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(98, 74, 98);
+    box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+#prev {
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+#next {
+    border-radius: 3px;
+    margin-left: 700px;
+}
+
+
+/* header navigations */
+
+a {
+    text-decoration: none;
+    color: navajowhite;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(85, 84, 84);
+}
+
+.right {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    font-size: 16px;
+    align-items: center;
+}
+
+.content {
+    animation: drop 3s ease-in;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.right:hover {
+    padding-left: 1.5rem;
+}
+
+.container a:hover {
+    background-color: rgb(32, 27, 20);
+    color: #fff;
+}
+
+.logo {
+    padding: 12px;
+    padding: 12px;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Mobile menu style */
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: navajowhite;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    align-self: center;
+}
+
+
+/* Auto image slider */
+
+.write-up {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    color: navajowhite;
+    margin-top: 20px;
+}
+
+.slide {
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0px 0px 5px 2px #ccc;
+    animation: drop 3s ease-in;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: left;
+}
+
+p {
+    width: 80%;
+    justify-content: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    text-align: right;
+    color: navajowhite;
+}
+
+footer {
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:768px) {
+    #next {
+        margin-left: 550px;
+    }
+    img {
+        width: 600px;
+        height: 400px;
+    }
+    #slider {
+        width: 600px;
+        height: 400px;
+        border: 10px solid white;
+        box-shadow: 0px 0px 5px 2px #ccc;
+        position: relative;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .right {
+        position: absolute;
+        right: 0%;
+        height: 50vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+    .right li {
+        opacity: 1;
+    }
+    .burger {
+        display: block;
+    }
+    /* The new class for phone size burger navigation( Javascript )*/
+    .nav-active {
+        transform: translateX(0%);
+        transition: 2s ease;
+    }
+    .write-up {
+        display: flex;
+        flex-direction: column;
+    }
+    /* text prperty */
+    .content {
+        margin: 0 40px;
+    }
+    .content h1 {
+        text-align: left;
+    }
+    .content p {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+@media(max-width:812px) {
+    #slider img {
+        display: none;
+    }
+    #slider {
+        display: none;
+    }
+    p {
+        text-align: justify;
+        justify-content: inter-word;
+        width: 20%;
+    }
+    .subscribe {
+        margin-top: 60px;
+    }
+}
