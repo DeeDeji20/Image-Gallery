@@ -1,7 +1,7 @@
 const sliderContent = document.getElementById('box');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
-const images = ['images/aa.jpg', 'images/books.jpg', 'images/a.jpg', 'images/blur.jpg', 'images/b.jpg', 'images/semiOpen.jpg', 'images/c.jpg', 'images/d.jpg'];
+const images = ['aa.jpg', 'books.jpg', 'a.jpg', 'blur.jpg', 'b.jpg', 'semiOpen.jpg', 'c.jpg', 'd.jpg', 'compKey.jpg'];
 
 let i = 0;
 

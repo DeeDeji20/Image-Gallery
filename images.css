@@ -162,6 +162,8 @@ p {
 .copyright {
     text-align: right;
     color: navajowhite;
+    float: right;
+    margin-right: 100px;
 }
 
 footer {
